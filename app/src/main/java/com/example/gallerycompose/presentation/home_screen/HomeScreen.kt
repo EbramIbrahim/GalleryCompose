@@ -25,7 +25,9 @@ fun HomeScreen(
     Scaffold(
         topBar = {
             HomeTopBar {
-                navController.navigate(Screens.SearchScreen.route)
+                navController.navigate(Screens.SearchScreen.route) {
+                    launchSingleTop = true
+                }
             }
         },
         content = {
